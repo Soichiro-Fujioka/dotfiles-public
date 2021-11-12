@@ -14,8 +14,21 @@ alias ls "ls -p -G"
 alias la "ls -A"
 alias ll "ls -l"
 alias lla "ll -A"
-alias g git
 command -qv nvim && alias vim nvim
+alias vim "nvim"
+alias pip "pip3"
+
+# Git
+alias g='git'
+alias gb='git branch'
+alias gch='git checkout'
+alias gco='git commit'
+alias gs='git status'
+alias ga='git add'
+alias gm='git merge'
+alias gph='git push origin'
+alias gpl='git pull origin'
+
 
 set -gx EDITOR nvim
 

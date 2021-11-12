@@ -63,6 +63,24 @@ Pods/
 # Fish local config
 .config/fish/config-local.fish
 .config/fish/fish_variables.x86_64
+.config/fish/completions/
+.config/fish/fish_variables
+.config/fish/functions/fisher.fish
+.config/iterm2/
+# Fish plugin settings
+# Tide auto injected files using wizard
+.config/fish/functions/_tide*
+.config/fish/functions/tide/
+.config/fish/functions/tide.fish
+.config/fish/functions/fish_prompt.fish
+.config/fish/functions/fish_mode_prompt.fish
+.config/fish/conf.d/_tide_init.fish
+# Z auto injected files
+.config/fish/conf.d/z.fish
+.config/fish/functions/__z.fish
+.config/fish/functions/__z_*
+# gruvbox theme auto injected files
+.config/fish/functions/theme_gruvbox.fish
 
 # Karabiner
 .config/karabiner/automatic_backups

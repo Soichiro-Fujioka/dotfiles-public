@@ -1,14 +1,7 @@
-![cover](./images/cover.png)
+# dotfiles
+This repository is forked from [craftzdog/dotfiles-public](https://github.com/craftzdog/dotfiles-public)
 
-# Takuya's dotfiles
-
-**Warning**: Don’t blindly use my settings unless you know what that entails. Use at your own risk!
-
-#### Looking for a Markdown note-taking app?
-
-Check out my app called Inkdrop:
-
-[![Inkdrop](./images/inkdrop.png)](https://www.inkdrop.app/)
+Thank you for sharing great dotfiles!!🌈
 
 ## Contents
 
@@ -18,7 +11,7 @@ Check out my app called Inkdrop:
 - git config
 - fish config
 
-## Vim setup
+## Installed Vim Plugins
 
 Requires Neovim (>= 0.5)
 
@@ -28,9 +21,12 @@ Requires Neovim (>= 0.5)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - A completion plugin for neovim coded in Lua
 - [lspsaga.nvim](https://github.com/tami5/lspsaga.nvim) - A light-weight LSP plugin based on Neovim built-in LSP with highly a performant UI
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - A highly extendable fuzzy finder over lists
+  - need to install ripgrep using `brew install ripgrep`
 - [defx.nvim](https://github.com/Shougo/defx.nvim) - A file explorer
+- [reireias/vim-cheatsheet](https://github.com/reireias/vim-cheatsheet) Instant Cheatsheet
+- [simeji/winresizer](https://github.com/simeji/winresizer) A window resizer
 
-## Shell setup
+## Installed Shell Packages
 
 - [Fish shell](https://fishshell.com/)
 - [Fisher](https://github.com/jorgebucaran/fisher) - Plugin manager
@@ -41,19 +37,14 @@ Requires Neovim (>= 0.5)
 - [ghq](https://github.com/x-motemen/ghq) - Local Git repository organizer
 - [peco](https://github.com/peco/peco) - Interactive filtering
 
-## How to use
 
-Watch my video tutorials:
-
-1. [My dev workflow using tmux and vim](https://www.youtube.com/watch?v=sSOfr2MtRU8&list=PLxQA0uNgQDCICMRwlOzWAZBPL05XBC_br&index=10)
-2. [My vim setup to speed up JavaScript coding for my Electron and React Native apps](https://www.youtube.com/watch?v=UZBjt04y4Oo&list=PLxQA0uNgQDCICMRwlOzWAZBPL05XBC_br&index=3)
-   - [Blogpost](https://dev.to/craftzdog/my-vim-setup-to-speed-up-javascript-coding-for-my-electron-and-react-native-apps-4ebp)
-3. [A productive command-line Git workflow for indie app developers](https://www.youtube.com/watch?v=qKpY7t5m35k&list=PLxQA0uNgQDCICMRwlOzWAZBPL05XBC_br&index=4)
-   - [Blogpost](https://dev.to/craftzdog/a-productive-command-line-git-workflow-for-indie-app-developers-k7d)
-4. [My Fish shell workflow for coding](https://www.youtube.com/watch?v=KKxhf50FIPI)
-
-## About me
-
-- [Twitter @inkdrop_app](https://twitter.com/inkdrop_app)
-- [Blog](https://blog.inkdrop.app/)
-- [My product: Inkdrop - Markdown note-taking app](https://www.inkdrop.app/)
+## How to setup
+1. Create a symbolic link like
+    ``` sh
+    ln -s $PJDIR/.config $HOME/.config
+    ```
+1. Install neovim and fish shell
+1. Change the default shell to fish
+1. Install `vim plug` and run `:call PlugInstall()` command on neovim
+1. Install Shell Packages
+1. Happy Coding!!🍻

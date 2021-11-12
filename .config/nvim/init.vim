@@ -9,8 +9,11 @@ scriptencoding utf-8
 if !1 | finish | endif
 
 set nocompatible
+set mouse=a
 set number
+set relativenumber
 syntax enable
+set splitbelow
 set fileencodings=utf-8,sjis,euc-jp,latin
 set encoding=utf-8
 set title
@@ -94,6 +97,8 @@ endif
 au BufNewFile,BufRead *.es6 setf javascript
 " TypeScript
 au BufNewFile,BufRead *.tsx setf typescriptreact
+" Python
+au BufNewFile,BufRead *.py set filetype=python
 " Markdown
 au BufNewFile,BufRead *.md set filetype=markdown
 au BufNewFile,BufRead *.mdx set filetype=markdown
@@ -122,6 +127,7 @@ if has("unix")
 endif
 
 runtime ./maps.vim
+runtime ./local.vim
 "}}}
 
 " Syntax theme "{{{
@@ -136,9 +142,10 @@ if exists("&termguicolors") && exists("&winblend")
   set pumblend=5
   set background=dark
   " Use NeoSolarized
-  let g:neosolarized_termtrans=1
-  runtime ./colors/NeoSolarized.vim
-  colorscheme NeoSolarized
+  " let g:neosolarized_termtrans=1
+  " runtime ./colors/NeoSolarized.vim
+  " colorscheme NeoSolarized
+  colorscheme gruvbox
 endif
 
 "}}}
@@ -149,3 +156,4 @@ set exrc
 "}}}
 
 " vim: set foldmethod=marker foldlevel=0:
+

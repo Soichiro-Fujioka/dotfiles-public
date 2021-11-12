@@ -30,6 +30,8 @@ endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
+Plug 'reireias/vim-cheatsheet'
+Plug 'simeji/winresizer'
 
 call plug#end()
 
