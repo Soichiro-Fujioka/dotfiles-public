@@ -25,6 +25,8 @@ Requires Neovim (>= 0.5)
 - [defx.nvim](https://github.com/Shougo/defx.nvim) - A file explorer
 - [reireias/vim-cheatsheet](https://github.com/reireias/vim-cheatsheet) Instant Cheatsheet
 - [simeji/winresizer](https://github.com/simeji/winresizer) A window resizer
+- [tpope/vim-commentary](https://github.com/tpope/vim-commentary) A comment out plugin
+- [JoosepAlviste/nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring#integrations) A comment out plugin for `.ts` and `.tsx` context 
 
 ## Installed Shell Packages
 

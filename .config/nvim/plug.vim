@@ -26,6 +26,8 @@ if has("nvim")
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'windwp/nvim-autopairs'
+  Plug 'tpope/vim-commentary'
+  Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
