@@ -146,6 +146,10 @@ if exists("&termguicolors") && exists("&winblend")
   " runtime ./colors/NeoSolarized.vim
   " colorscheme NeoSolarized
   colorscheme gruvbox
+  " colorscheme zenburn
+  " transparent settings
+  hi Normal guibg=NONE ctermbg=NONE
+  
 endif
 
 "}}}
