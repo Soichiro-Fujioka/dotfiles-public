@@ -52,4 +52,5 @@ Requires Neovim (>= 0.5)
 1. Change the default shell to fish
 1. Install `vim plug` and run `:call PlugInstall()` command on neovim
 1. Install Shell Packages
+1. (optional) put `.config/fish/config-local.fish` and `.config/nvim/local.vim` as local settings files
 1. Happy Coding!!🍻
