@@ -100,9 +100,40 @@ nvim_lsp.tsserver.setup {
   capabilities = capabilities
 }
 
+nvim_lsp.pyright.setup {
+  on_attach = on_attach,
+  filetypes = { "python" },
+  capabilities = capabilities,
+  root_dir = nvim_lsp.util.root_pattern('.git')
+}
+
+--[[
+nvim_lsp.pylsp.setup {
+  on_attach = on_attach,
+  filetypes = { "python" },
+  capabilities = capabilities,
+  -- root_dir = function()
+      -- return vim.fn.getcwd()
+  -- end,
+  settings = {
+    formatCommand = { "black" },
+    pylsp = {
+      configurationSources = "flake8",
+      pluginss = {
+        flake8 = {
+          enabled = true,
+          -- config = "./flake8",
+          maxLineLength = 20
+        }
+      }
+    }
+  }
+}
+]]
+
 nvim_lsp.diagnosticls.setup {
   on_attach = on_attach,
-  filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'markdown', 'pandoc' },
+  filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'markdown', 'pandoc', 'python' },
   init_options = {
     linters = {
       eslint = {
@@ -122,15 +153,39 @@ nvim_lsp.diagnosticls.setup {
         },
         securities = {
           [2] = 'error',
-          [1] = 'warning'
-        }
+          [1] = 'warning',
+        },
       },
+      flake8 = {
+        command = 'flake8',
+        sourceName = 'flake8',
+        args = {  '--format=%(row)d,%(col)d,%(code).1s,%(code)s: %(text)s', '-' },
+        formatPattern = {
+          '(\\d+),(\\d+),([A-Z]),(.*)(\\r|\\n)*$',
+          {
+            line = 1,
+            column = 2,
+            security = 3,
+            message = 4
+          }
+        },
+        rootPatterns = { '.git' },
+        securities = {
+          E = 'error',
+          F = 'error',
+          C = 'error',
+          N = 'error',
+          W = 'warning'
+        },
+        requiredFiles = {'flake8', '.flake8'},
+      }
     },
     filetypes = {
       javascript = 'eslint',
       javascriptreact = 'eslint',
       typescript = 'eslint',
       typescriptreact = 'eslint',
+      python = 'flake8'
     },
     formatters = {
       eslint_d = {
@@ -138,7 +193,6 @@ nvim_lsp.diagnosticls.setup {
         -- command = './node_modules/.bin/eslint',
         rootPatterns = { '.git' },
         args = { '--stdin', '--stdin-filename', '%filename', '--fix-to-stdout' },
-        rootPatterns = { '.git' },
       },
       prettier = {
         command = 'prettier_d_slim',
@@ -146,6 +200,11 @@ nvim_lsp.diagnosticls.setup {
         rootPatterns = { '.git' },
         -- requiredFiles: { 'prettier.config.js' },
         args = { '--stdin', '--stdin-filepath', '%filename' }
+      },
+      black = {
+        command = "black",
+        args = { "--quiet", "-" },
+        rootPatterns = { '.git' },
       }
     },
     formatFiletypes = {
@@ -159,6 +218,7 @@ nvim_lsp.diagnosticls.setup {
       typescriptreact = 'prettier',
       json = 'prettier',
       markdown = 'prettier',
+      python = 'black'
     }
   }
 }
