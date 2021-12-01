@@ -21,6 +21,7 @@ Requires Neovim (>= 0.5)
     - `npm install -g eslint_d prettier_d_slim typescript typescript-language-server diagnostic-languageserver`
     - `pip install pyright flake8 black`
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - [Treesitter](https://github.com/tree-sitter/tree-sitter) configurations and abstraction layer for Neovim
+  - to enable syntax hilight, call `TSInstall maintained`
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - A completion plugin for neovim coded in Lua
 - [lspsaga.nvim](https://github.com/tami5/lspsaga.nvim) - A light-weight LSP plugin based on Neovim built-in LSP with highly a performant UI
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - A highly extendable fuzzy finder over lists
