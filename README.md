@@ -31,6 +31,8 @@ Requires Neovim (>= 0.5)
 - [simeji/winresizer](https://github.com/simeji/winresizer) A window resizer
 - [tpope/vim-commentary](https://github.com/tpope/vim-commentary) A comment out plugin
 - [JoosepAlviste/nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring#integrations) A comment out plugin for `.ts` and `.tsx` context 
+- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) A blazing fast and easy to configure Neovim statusline written in Lua
+- [kdheepak/tabline.nvim](https://github.com/kdheepak/tabline.nvim) A "buffer and tab" tabline
 
 ## Installed Shell Packages
 

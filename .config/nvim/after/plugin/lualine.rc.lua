@@ -37,14 +37,14 @@ lualine.setup {
     lualine_y = {},
     lualine_z = {}
   },
-  tabline = {
-    lualine_a = {'filename'},
+  -- tabline = {
+    -- lualine_a = {'filename'},
     -- lualine_b = {'branch'},
     -- lualine_c = {'filename'},
-    lualine_x = {},
-    lualine_y = {},
-    lualine_z = {'tabs'}
-  },
+    -- lualine_x = {},
+    -- lualine_y = {},
+    -- lualine_z = {'tabs'}
+  -- },
   extensions = {'fugitive'}
 }
 
