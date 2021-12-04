@@ -104,7 +104,13 @@ nvim_lsp.pyright.setup {
   on_attach = on_attach,
   filetypes = { "python" },
   capabilities = capabilities,
-  root_dir = nvim_lsp.util.root_pattern('.git')
+  root_dir = nvim_lsp.util.root_pattern('.git'),
+  settings = {
+    python = {
+      pythonPath = vim.fn.system("$VIRRUAL_ENV" .. "/bin/python")
+    }
+  }
+
 }
 
 --[[
