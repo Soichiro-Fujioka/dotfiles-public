@@ -30,6 +30,7 @@ if has("nvim")
   Plug 'windwp/nvim-autopairs'
   Plug 'tpope/vim-commentary'
   Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
   " Plug 'williamboman/nvim-lsp-installer'
 endif
 

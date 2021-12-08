@@ -33,6 +33,8 @@ Requires Neovim (>= 0.5)
 - [JoosepAlviste/nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring#integrations) A comment out plugin for `.ts` and `.tsx` context 
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) A blazing fast and easy to configure Neovim statusline written in Lua
 - [kdheepak/tabline.nvim](https://github.com/kdheepak/tabline.nvim) A "buffer and tab" tabline
+- [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) Preview markdown on your modern browser with synchronised scrolling and flexible configuration
+  - need to install yarn using `npm install -g yarn`
 
 ## Installed Shell Packages
 
