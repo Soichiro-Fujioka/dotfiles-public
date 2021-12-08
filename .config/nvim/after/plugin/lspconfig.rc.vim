@@ -107,7 +107,7 @@ nvim_lsp.pyright.setup {
   root_dir = nvim_lsp.util.root_pattern('.git'),
   settings = {
     python = {
-      pythonPath = vim.fn.system("$VIRRUAL_ENV" .. "/bin/python")
+      pythonPath = vim.fn.system("$VIRTUAL_ENV" .. "/bin/python")
     }
   }
 
@@ -223,7 +223,7 @@ nvim_lsp.diagnosticls.setup {
       typescript = 'prettier',
       typescriptreact = 'prettier',
       json = 'prettier',
-      markdown = 'prettier',
+      -- markdown = 'prettier',
       python = 'black'
     }
   }
