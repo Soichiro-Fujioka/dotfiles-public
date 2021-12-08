@@ -16,4 +16,4 @@ EOF
 nmap te :TablineTabNew 
 nmap <S-Tab> :TablineBufferPrevious<Return>
 nmap <Tab> :TablineBufferNext<Return>
-nnoremap <C-w> :bd<Return>
+nnoremap <C-w> :bp\|bd #<Return>
