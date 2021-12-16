@@ -32,6 +32,7 @@ if has("nvim")
   Plug 'JoosepAlviste/nvim-ts-context-commentstring'
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
   " Plug 'williamboman/nvim-lsp-installer'
+  Plug 'junegunn/goyo.vim'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }

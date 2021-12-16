@@ -15,6 +15,12 @@ nnoremap - <C-x>
 " Select all
 nmap <C-a> gg<S-v>G
 
+" cursor move in insert mode
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+
 "-----------------------------
 " Tabs
 
