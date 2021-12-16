@@ -1,5 +1,10 @@
 lua << EOF
-require'tabline'.setup {enable = false}
+require'tabline'.setup {
+  enable = false,
+  options = {
+    show_filename_only = true
+  }
+}
 
 require'lualine'.setup {
   tabline = {
