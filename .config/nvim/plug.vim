@@ -13,7 +13,7 @@ if has("nvim")
   Plug 'kristijanhusak/defx-git'
   Plug 'kristijanhusak/defx-icons'
   Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'neovim/nvim-lspconfig'
+  Plug 'neovim/nvim-lspconfig', { 'on': [] }
   Plug 'tami5/lspsaga.nvim', { 'branch': 'nvim51' }
   " Plug 'glepnir/lspsaga.nvim'
   Plug 'folke/lsp-colors.nvim'
@@ -42,3 +42,9 @@ Plug 'simeji/winresizer'
 
 call plug#end()
 
+function! s:load_plug(timer)
+    call plug#load(
+                \ 'nvim-lspconfig',
+                \ )
+endfunction
+call timer_start(500, function("s:load_plug"))
