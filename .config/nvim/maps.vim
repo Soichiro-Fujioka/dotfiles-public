@@ -3,6 +3,8 @@
 nnoremap <S-C-p> "0p
 " Delete without yank
 nnoremap <leader>d "_d
+nnoremap p "0p
+nnoremap P "0P
 nnoremap x "_x
 
 " Increment/decrement
