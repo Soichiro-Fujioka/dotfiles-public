@@ -13,7 +13,7 @@ if has("nvim")
   Plug 'kristijanhusak/defx-git'
   Plug 'kristijanhusak/defx-icons'
   Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'neovim/nvim-lspconfig', { 'on': [] }
+  Plug 'neovim/nvim-lspconfig' 
   Plug 'tami5/lspsaga.nvim', { 'branch': 'nvim51' }
   " Plug 'glepnir/lspsaga.nvim'
   Plug 'folke/lsp-colors.nvim'
@@ -33,6 +33,7 @@ if has("nvim")
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
   " Plug 'williamboman/nvim-lsp-installer'
   Plug 'junegunn/goyo.vim'
+  Plug 'shuntaka9576/preview-swagger.nvim', { 'do': 'yarn install'  }
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
