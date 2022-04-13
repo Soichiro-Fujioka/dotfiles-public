@@ -55,4 +55,4 @@ nnoremap sl <C-w>l
 
 "------------------------------
 " Command
-cmap G Gtabedit<Space>:
+" cmap G Gtabedit<Space>:
