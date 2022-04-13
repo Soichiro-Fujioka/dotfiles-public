@@ -34,6 +34,8 @@ if has("nvim")
   " Plug 'williamboman/nvim-lsp-installer'
   Plug 'junegunn/goyo.vim'
   Plug 'shuntaka9576/preview-swagger.nvim', { 'do': 'yarn install'  }
+  Plug 'godlygeek/tabular'
+  Plug 'preservim/vim-markdown'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
