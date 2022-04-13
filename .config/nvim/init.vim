@@ -26,6 +26,7 @@ set cmdheight=1
 set laststatus=2
 set scrolloff=10
 set expandtab
+set noswapfile
 "let loaded_matchparen = 1
 set shell=fish
 set backupskip=/tmp/*,/private/tmp/*
