@@ -87,3 +87,6 @@ Pods/
 
 # Karabiner
 .config/karabiner/automatic_backups
+
+# Roland Cloud
+.config/Roland Cloud/
