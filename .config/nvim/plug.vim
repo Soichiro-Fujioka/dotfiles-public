@@ -36,6 +36,7 @@ if has("nvim")
   Plug 'shuntaka9576/preview-swagger.nvim', { 'do': 'yarn install'  }
   Plug 'godlygeek/tabular'
   Plug 'preservim/vim-markdown'
+  Plug 'tpope/vim-rhubarb'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
