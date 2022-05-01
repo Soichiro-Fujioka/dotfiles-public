@@ -7,3 +7,8 @@ endif
 
 cnoreabbrev g Git
 cnoreabbrev gopen GBrowse
+
+nnoremap [fugitive]  <Nop>
+nmap <space>g [fugitive]
+nnoremap <silent> [fugitive]s :Git<CR><C-w>T
+nnoremap <silent> [fugitive]d :Gdiff<CR>
