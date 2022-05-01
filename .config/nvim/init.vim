@@ -146,7 +146,9 @@ if exists("&termguicolors") && exists("&winblend")
   " let g:neosolarized_termtrans=1
   " runtime ./colors/NeoSolarized.vim
   " colorscheme NeoSolarized
-  colorscheme gruvbox
+  " colorscheme hatsunemiku
+  colorscheme space-vim-dark
+  " colorscheme gruvbox
   " colorscheme zenburn
   " transparent settings
   hi Normal guibg=NONE ctermbg=NONE
