@@ -2,7 +2,9 @@
 
 nnoremap <S-C-p> "0p
 " Delete without yank
-nnoremap <leader>d "_d
+nnoremap d "_d
+xnoremap d "_d
+xnoremap p "_dP
 nnoremap p "0p
 nnoremap P "0P
 nnoremap x "_x
