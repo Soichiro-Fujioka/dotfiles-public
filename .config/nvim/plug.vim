@@ -30,16 +30,14 @@ if has("nvim")
   Plug 'tpope/vim-commentary'
   Plug 'JoosepAlviste/nvim-ts-context-commentstring'
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-  Plug 'junegunn/goyo.vim'
   Plug 'shuntaka9576/preview-swagger.nvim', { 'do': 'yarn install'  }
   Plug 'godlygeek/tabular'
   Plug 'preservim/vim-markdown'
-  Plug 'tpope/vim-rhubarb'
+  Plug 'windwp/nvim-ts-autotag'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
-Plug 'reireias/vim-cheatsheet'
 Plug 'simeji/winresizer'
 
 call plug#end()
