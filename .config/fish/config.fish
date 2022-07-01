@@ -23,12 +23,14 @@ alias g='git'
 alias gb='git branch'
 alias gch='git checkout'
 alias gco='git commit'
+alias gcoa='git commit --amend'
 alias gs='git status'
 alias ga='git add'
 alias gm='git merge'
 alias gph='git push origin'
 alias gpl='git pull origin'
-
+alias glo='git log --oneline'
+alias gfc='git fetch --all'
 
 set -gx EDITOR nvim
 
