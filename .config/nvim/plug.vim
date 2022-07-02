@@ -34,6 +34,7 @@ if has("nvim")
   Plug 'godlygeek/tabular'
   Plug 'preservim/vim-markdown'
   Plug 'windwp/nvim-ts-autotag'
+  Plug 'lukas-reineke/indent-blankline.nvim'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }

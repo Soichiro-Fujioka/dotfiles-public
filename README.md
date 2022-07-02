@@ -35,6 +35,7 @@ Requires Neovim (>= 0.5)
 - [kdheepak/tabline.nvim](https://github.com/kdheepak/tabline.nvim) A "buffer and tab" tabline
 - [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) Preview markdown on your modern browser with synchronised scrolling and flexible configuration
   - need to install yarn using `npm install -g yarn`
+- [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) A indent blankline plugin
 
 ## Installed Shell Packages
 
