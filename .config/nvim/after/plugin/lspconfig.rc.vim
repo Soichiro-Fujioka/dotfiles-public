@@ -7,6 +7,8 @@ lua << EOF
 EOF
 
 lua << EOF
+require("nvim-lsp-installer").setup()
+local util = require('lspconfig/util')
 local nvim_lsp = require('lspconfig')
 local protocol = require'vim.lsp.protocol'
 
@@ -108,7 +110,8 @@ nvim_lsp.pyright.setup {
   root_dir = nvim_lsp.util.root_pattern('.git'),
   settings = {
     python = {
-      pythonPath = vim.fn.system("$VIRTUAL_ENV" .. "/bin/python")
+      -- pythonPath = vim.fn.system("$VIRTUAL_ENV" .. "/bin/python3")
+      pythonPath = util.path.join(vim.env.VIRTUAL_ENV, 'bin', 'python3')
     }
   }
 
@@ -197,14 +200,12 @@ nvim_lsp.diagnosticls.setup {
     formatters = {
       eslint_d = {
         command = 'eslint_d',
-        -- command = './node_modules/.bin/eslint',
-        rootPatterns = { '.git' },
+        -- rootPatterns = { '.git' },
         args = { '--stdin', '--stdin-filename', '%filename', '--fix-to-stdout' },
       },
       prettier = {
         command = 'prettier_d_slim',
-        -- command = './node_modules/.bin/prettier',
-        rootPatterns = { '.git' },
+        -- rootPatterns = { '.git' },
         -- requiredFiles: { 'prettier.config.js' },
         args = { '--stdin', '--stdin-filepath', '%filename' }
       },
