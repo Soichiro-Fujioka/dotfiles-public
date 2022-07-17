@@ -7,6 +7,8 @@ xnoremap d "_d
 xnoremap p "_dP
 nnoremap p "0p
 nnoremap P "0P
+vnoremap p "0p
+vnoremap P "0P
 nnoremap x "_x
 
 " Increment/decrement
