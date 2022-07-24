@@ -1,0 +1,70 @@
+{
+    "terminal.integrated.gpuAcceleration": "off",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "One Dark Pro Flat",
+    "workbench.productIconTheme": "fluent-icons",
+    "editor.minimap.enabled": false,
+    "workbench.editor.untitled.hint": "hidden",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font' ",
+    "terminal.integrated.allowChords": false,
+    "asciidoc.preview.fontSize": 16,
+    "editor.guides.bracketPairs": true,
+    "workbench.tree.renderIndentGuides": "always",
+    "editor.cursorSmoothCaretAnimation": true,
+    // vim settings
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.foldfix": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<Tab>"
+            ],
+            "commands": [
+                "workbench.action.nextEditor",
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<S-Tab>"
+            ],
+            "commands": [
+                "workbench.action.previousEditor",
+            ],
+            "silent": true
+        },
+        // split window
+        {
+            "before": [
+                "s",
+                "v"
+            ],
+            "commands": [
+                "workbench.action.splitEditor",
+            ],
+            "silent": true
+        },
+        // move window
+        {
+            "before": [
+                "s",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.focusLeftGroup",
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "s",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.focusRightGroup",
+            ],
+            "silent": true
+        },
+    ]
+}

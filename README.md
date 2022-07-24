@@ -10,6 +10,7 @@ Thank you for sharing great dotfiles!!🌈
 - tmux config
 - git config
 - fish config
+- vscode vim
 
 ## Installed Vim Plugins
 

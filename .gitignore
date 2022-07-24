@@ -90,3 +90,6 @@ Pods/
 
 # Roland Cloud
 .config/Roland Cloud/
+
+# config store
+.config/configstore/
