@@ -11,6 +11,7 @@
     "editor.guides.bracketPairs": true,
     "workbench.tree.renderIndentGuides": "always",
     "editor.cursorSmoothCaretAnimation": true,
+    "editor.lineNumbers": "relative",
     // vim settings
     "vim.useSystemClipboard": true,
     "vim.hlsearch": true,
@@ -66,5 +67,24 @@
             ],
             "silent": true
         },
-    ]
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+          "before": ["d"],
+          "after": ["\"", "_", "d"]
+        },
+        {
+          "before": ["d", "d"],
+          "after": ["\"", "_", "d", "d"]
+        },
+        {
+          "before": ["x"],
+          "after": ["\"", "_", "x"]
+        },
+        {
+          "before": ["p"],
+    
+          "after": ["0", "p"]
+        }
+      ],
 }
