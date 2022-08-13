@@ -1,17 +1,29 @@
 {
+  // terminal settings
   "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.sendKeybindingsToShell": true,
+  "terminal.integrated.allowChords": false,
+  // workbench settings
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "One Dark Pro Flat",
   "workbench.productIconTheme": "fluent-icons",
-  "editor.minimap.enabled": false,
   "workbench.editor.untitled.hint": "hidden",
-  "editor.fontFamily": "'JetBrainsMono Nerd Font' ",
-  "terminal.integrated.allowChords": false,
-  "asciidoc.preview.fontSize": 16,
-  "editor.guides.bracketPairs": true,
   "workbench.tree.renderIndentGuides": "always",
+  // editor settings
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font' ",
+  "editor.guides.bracketPairs": true,
   "editor.cursorSmoothCaretAnimation": true,
   "editor.lineNumbers": "relative",
+  "diffEditor.wordWrap": "off",
+  // extenstions
+  "gitlens.views.commits.showBranchComparison": false,
+  "gitlens.advanced.messages": {
+    "suppressCreatePullRequestPrompt": true
+  },
+  "asciidoc.preview.fontSize": 16,
   // vim settings
   "vim.useSystemClipboard": true,
   "vim.hlsearch": true,
@@ -64,19 +76,12 @@
       "after": ["0", "p"]
     }
   ],
-  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
-  "terminal.integrated.defaultProfile.osx": "fish",
-  "terminal.integrated.sendKeybindingsToShell": true,
-  "gitlens.views.commits.showBranchComparison": false,
-  "gitlens.advanced.messages": {
-    "suppressCreatePullRequestPrompt": true
-  },
+  // file type settings
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll": true
     }
-  },
-  "diffEditor.wordWrap": "off"
+  }
 }
