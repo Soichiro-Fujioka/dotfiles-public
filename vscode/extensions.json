@@ -7,6 +7,7 @@
         "pkief.material-icon-theme",
         "zhuangtongfa.material-theme",
         "vscodevim.vim",
-        "ms-azuretools.vscode-docker"
+        "ms-azuretools.vscode-docker",
+        "esbenp.prettier-vscode"
     ]
 }
