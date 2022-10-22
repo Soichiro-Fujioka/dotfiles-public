@@ -76,6 +76,12 @@
       "after": ["0", "p"]
     }
   ],
+  "vim.insertModeKeyBindings": [
+    {
+        "before": ["j","j"],
+        "after": ["<Esc>"]
+    }
+  ],
   // file type settings
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",

@@ -93,3 +93,7 @@ Pods/
 
 # config store
 .config/configstore/
+
+# fisher
+.config/fisher/
+
