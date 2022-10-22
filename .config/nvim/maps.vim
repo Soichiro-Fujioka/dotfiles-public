@@ -27,6 +27,9 @@ inoremap <C-k> <Up>
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 
+" esc
+inoremap <silent> jj <ESC>
+
 "-----------------------------
 " Tabs
 
